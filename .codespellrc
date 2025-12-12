@@ -1,3 +1,4 @@
 [codespell]
-# Ignore stuff that looks like base64 blobs in Jupyter Notebooks
+
+# Ignore really long strings that look like base64-encoded data, e.g. in Jupyter Notebook outputs
 ignore-regex = [A-Za-z0-9+/]{100,}
