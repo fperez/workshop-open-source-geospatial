@@ -1,9 +1,11 @@
 ---
 subject: "Tutorial"
 authors:
-  - name: "Fernando Perez"
+  - name: "Fernando Pérez"
     affiliations:
       - "University of California, Berkeley"
+      - "Department of Statistics"
+      - "Berkeley Institute for Data Science"
       - "Schmidt Center for Data Science and Environment"
     equal_contributor: true
     email: "fernando.perez@berkeley.edu"
