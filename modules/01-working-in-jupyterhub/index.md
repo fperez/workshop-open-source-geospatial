@@ -13,11 +13,10 @@ authors:
 # ❄️ 1 - Working in JupyterHub with CryoCloud
 
 :::{note} 🛝 Slides
-:icon: false
 :class: dropdown
 
 <iframe
-    src="https://docs.google.com/presentation/d/e/2PACX-1vQHM2_0pwRCghPvFFHDvH-KMzD5seeR2D9NkPrFWPyPBSJBsN50uIc81x6rDthVIyroOXqH5rRKPZL7/pubembed?start=false&loop=false&delayms=60000"
+    src="https://docs.google.com/presentation/d/e/2PACX-1vStqGZj7fQltfj2SQjS1L8K9KGTDNk8E-bIAQWBu2xvx66eQpsDZCNb0DHl0d3eJBXTmMEmc32dj4Nc/pubembed?start=false&loop=false&delayms=60000"
     frameborder="0"
     width="960"
     height="569"
@@ -27,6 +26,7 @@ authors:
 </iframe>
 :::
 
+
 :::{tip} Learning Objectives
 - Learn how to access and use CryoCloud
 - Start a Jupyter server in CryoCloud
@@ -34,7 +34,7 @@ authors:
 :::
 
 
-## Access the [CryoCloud powerpoint](https://docs.google.com/presentation/d/1BRWaZUEfBJlKA9WL7jIdL_4jlQ24wohS_GNjYJCFliw/edit?usp=sharing) whenever you need to reference it
+## Access the [CryoCloud powerpoint](https://bit.ly/48DBo8D) whenever you need to reference it
 
 Open the powerpoint by directly clicking on the hyperlink above.
 
@@ -62,7 +62,6 @@ server and having to rerun your analysis.**
     - JupyterHub options and viewing setup
     - GitHub
     - Virtual Linux desktop
-    - SyncThing
     - Viewing and editing of different files
 
 ---
@@ -102,7 +101,7 @@ A Docker tag tells CryoCloud which exact environment to use. You can choose tags
 
 ### Option A: Use an older or alternate CryoCloud environment
 
-CryoCloud publishes its Python environment image to Quay.io, Red Hat’s hosted container image registry service which is free for publicly accessible container images.
+CryoCloud publishes its Python environment image to Quay.io, Red Hat’s hosted container image registry service that is free for publicly accessible container images.
 
 1. Visit the repository tags page:
    https://quay.io/repository/cryointhecloud/cryo-hub-image?tab=tags
@@ -206,9 +205,15 @@ After the image is built once, you can easily select it again in future sessions
 
 ---
 
+## Task: Start a CryoCloud server
+
+Follow the instructions in our reference page [](/reference/01-starting-your-server.md)
+to start a server on CryoCloud using the official workshop image!
+
+
 ## Task: Clone the workshop website
 
-We will clone (e.g. make a local copy of) the [workshop repository](https://github.com/geojupyter/workshop-open-source-geospatial.git).
+We will clone (i.e. make a local copy of) the [workshop repository](https://github.com/geojupyter/workshop-open-source-geospatial.git).
 
 To do this:
 1. Select the plus (`+`) sign above the `File Browser` to the left, which will bring up a `Launcher` window.
@@ -217,7 +222,7 @@ To do this:
    This is your command line like you would have on any computer.
 
    Before cloning the repo, you have the option to switch to another file folder using
-   the _change directory_ terminal command: `cd folder` if you do not want the Hackweek
+   the _change directory_ terminal command: `cd folder` if you do not want the workshop
    repo in your current directory (you can check which directory you are currently in
    using _print working directory_ command: `pwd`).
 
@@ -228,7 +233,7 @@ To do this:
 3. Now clone the workshop code into your current directory:
 
    ```
-   https://github.com/geojupyter/workshop-open-source-geospatial.git
+   git clone https://github.com/geojupyter/workshop-open-source-geospatial.git
    ```
 
 4. You will see the folder pop into your `File Browser` on the left if you have the current directory open.
@@ -238,11 +243,15 @@ To do this:
    click on `index.md`.
    This should open up this tutorial in case you want to review it in the future.
 
+---
 
-Now after the demo...
+## Task: Activate GitHub authentication
 
+Let's do a quick GitHub authentication to make our lives easier as we access different repositories. This authentication will last 8 hours or until you finish your session, then you will need to do it again if you want to re-authenticate. Instructions are here: [](/reference/03-gh-auth.md).
 
 ---
+
+Now after the demo...
 
 ## Shutting down your JupyterHub
 
@@ -257,17 +266,8 @@ Time on the JupyterHub costs money and there are systems in place to make sure y
 After 90 minutes of no use, it will shut down.
 We prefer you shut down the server when so we save that 90 minutes of computing cost.
 
-To do so:
-
-- In upper left, click on `File` > `Hub Control Panel`, which will open another tab
-- Click the red `Stop Server` button. Once this button disappears after you clicked it, your server is off.
-- Click `Log Out` in the top right of your screen and you will be logged out, or you can start a new server
-- You can now close this tab and the other tab where you were just working
-
-```{image} ./stop_server.png
-:width: 70%
-:align: center
-```
+To do so, follow the instructions on our reference page
+[](/reference/02-stopping-your-server.md).
 
 ---
 
