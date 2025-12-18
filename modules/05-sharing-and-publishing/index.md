@@ -87,7 +87,7 @@ Directives can include **_rich_** Markdown content.
 Try hovering over the word "Term" to see a definition.
 ```
 
-As a little side note, the above live demo box is _itself_ implemented as a MyST directive, appropriately called `myst` 😃! It gives you a live MyST preview box that runs in the document itself. Since the underlying 
+As a little side note, the above live demo box is _itself_ implemented as a MyST directive, appropriately called `myst` 😃! It gives you a live MyST preview box that runs in the document itself. Since the underlying
 
 ##### 🧠 What do we know now?
 
@@ -169,7 +169,7 @@ Right click this file and select the top option from the menu: "Build MyST Proje
 ...a new browser tab opens with a loading spinner and the title "Building MyST Site".
 
 After around 50 seconds, the build will complete and the website content will display
-automatically.  Subsequent rebuilds are faster as they don't need to download some needed templates. 
+automatically.  Subsequent rebuilds are faster as they don't need to download some needed templates.
 Note that this timing is on our hub, where cloud disk access is a bit slower. On a laptop with a local disk, the first build takes on the order of 15-20 seconds.
 
 At the top-left is the website title: "Open Source Geospatial Workflows in the Cloud".
